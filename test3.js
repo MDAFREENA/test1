@@ -1,3 +1,4 @@
-const path=require("path")
-console.log(path.dirname(_filename));
-console.log(path.basename(_filename));
+let arr=[10,20,30,40];
+for(let args of arr){
+    console.log(args);
+}

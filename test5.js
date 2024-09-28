@@ -1,8 +1,12 @@
-const fs=require('fs');
-
-fs.readFile('one.txt','utf8',(err,data)=>{
-    if(err){
-        console.log(err)
+class Sample
+{
+    constructor(id,name){
+        this.id=id;
+        this.name=name;
     }
-    console.log(data);
-})
+    displayInfo() {
+        console.log(this.id+" "+this.name);
+    }      
+}
+let s=new Sample(101,"AjayReddy");
+s.displayInfo();

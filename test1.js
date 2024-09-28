@@ -1,7 +1,8 @@
-const os=require('os')
-console.log(os.type());
-console.log(os.version());
-console.log(os.freemem());
-console.log(os.cpus());
-console.log(__dirname);
-console.log(__filename);
+function rest(...args){
+    let result=0;
+    for(let arg of args){
+        result=result+arg;
+    }
+    console.log("Result is="+result)
+}
+rest(10,20,30,40,50);

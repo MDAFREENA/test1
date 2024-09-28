@@ -1,8 +1,12 @@
-const fs=require('fs');
-const content="This is a write file concept";
-fs.writeFile("two.txt",content,(err)=>{
-    if(err){
-        console.log(err)
+class Sample
+{
+    constructor(){
+        this.id=101;
+        this.name="APPU"
     }
-    console.log("file created successfully check once");
-})
+    displayInfo() {
+        console.log(this.id+" "+this.name);
+    }      
+}
+let s=new Sample();
+s.displayInfo();
