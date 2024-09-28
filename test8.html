@@ -1,22 +1,43 @@
 <html>
     <body>
-        <script type="text/javascript">
-            var day=parsentlnt(prompt("enter day number"));
-            switch(day){
-                case 1:{
-                    document.write("monday");
-                    break;
-                }
-                case 2:{
-                    document.write("tuesday");
-                    break;
-            }
-            default:{
-                document.write("wrong day number")
-            }
-        }
-
-        </script>
+        <form>
+            <center><h2>student Bio-data form</h2></center>
+            <br><br><div>
+            <label for="StudentName">StudentName</label>
+            <input type="text" name="studentname"
+            placeholder="enter student name"required/>
+        </br>
+            <label for="studentpassword">student password</label>
+            <input type="password" name="studentpassword"
+            placeholder="enter student password"required/>
+            </br>
+            <label for="student age">student age</label>
+            <input type="number" name="student age"
+            placeholder="enter student age" required/>
+            <label for="gender">gender</label>
+        <input type="radio" name="r1">male</input>
+    <input type="radio" name="r1">female</input>
+    <br>
+    <label for="DOB">student dob:</label>
+    <input type="date"/>
+    <br>
+    <label for="email">email</label>
+    <input type="email" name="email"/>
+    <br>
+    <label for="address">address</label>
+    <textarea cols="10" rows="8"></textarea>
+    <br>
+    <label for="course">select course:</label>
+    <select option="EEE">
+        <option>ECE</option>
+        <option>CSE</option>
+        <option>CIVEL</option>
+    </select>
+    <br><br><br>
+    <input type="submit" value="submit"/>
+    <input type="reset" value="reset"/>
+    
+</div>
+        </form>
     </body>
-
 </html>
